@@ -24,7 +24,8 @@ function extractLinks(html, sourceUrl) {
     "archive", "tag", "category", "author", "edit",
   ]);
 
-  const container = doc.querySelector(".entry-content, article, main, #content") || doc.body;
+  const container = doc.querySelector(".entry-content, article, main, #content");
+  if (!container) return links;
   const anchors = Array.from(container.querySelectorAll("a[href]"));
 
   anchors.forEach((a) => {
