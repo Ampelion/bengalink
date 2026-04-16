@@ -15,7 +15,7 @@ function extractLinks(html, sourceUrl) {
   const seen = new Set();
   const links = [];
   const sourceDomain = new URL(sourceUrl).hostname.replace(/^www\./, "");
-  if (new URL(abs).hostname.replace(/^www\./, "") === sourceDomain) return;
+
   const NAV_WORDS = new Set([
     "home", "about", "contact", "subscribe", "login", "register",
     "tweet", "share", "facebook", "twitter", "instagram", "email",
@@ -41,7 +41,7 @@ function extractLinks(html, sourceUrl) {
     let domain;
     try { domain = new URL(abs).hostname.replace(/^www\./, ""); } catch { return; }
 
-    if (new URL(abs).hostname === sourceDomain) return;
+    if (new URL(abs).hostname.replace(/^www\./, "") === sourceDomain) return;
     const key = abs + "||" + text;
     if (seen.has(key)) return;
     seen.add(key);
