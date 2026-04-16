@@ -14,8 +14,8 @@ function extractLinks(html, sourceUrl) {
   const doc = parser.parseFromString(html, "text/html");
   const seen = new Set();
   const links = [];
-  const sourceDomain = new URL(sourceUrl).hostname;
-
+  const sourceDomain = new URL(sourceUrl).hostname.replace(/^www\./, "");
+  if (new URL(abs).hostname.replace(/^www\./, "") === sourceDomain) return;
   const NAV_WORDS = new Set([
     "home", "about", "contact", "subscribe", "login", "register",
     "tweet", "share", "facebook", "twitter", "instagram", "email",
