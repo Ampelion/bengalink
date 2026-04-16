@@ -26,7 +26,7 @@ function extractLinks(html, sourceUrl) {
 
   const container = doc.querySelector(".entry-content, article, main, #content");
   if (!container) return links;
-  container.querySelectorAll("aside, .sidebar, .widget, nav, footer, [class*='sidebar'], [id*='sidebar']")
+  doc.querySelectorAll("aside, [class*='sidebar'], [id*='sidebar']")
     .forEach(el => el.remove());
 
   const anchors = Array.from(container.querySelectorAll("a[href]"));
