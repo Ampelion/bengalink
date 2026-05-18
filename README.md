@@ -10,6 +10,6 @@ Open in a browser window and paste the URL for the post you're reading. The link
 
 ## Posts to try
 
-- https://darioamodei.com/essay/machines-of-loving-grace — this one returns an animated gif on one of the cards
-- https://sciencebasedmedicine.org/the-myth-of-the-magically-powerful-placebo-returns/ — Dr. Gorski loves links and uses them liberally
-- https://escapecollective.com/ — it even grids pages that are already gridded
+- https://darioamodei.com/essay/machines-of-loving-grace  -this one returns an animated gif on one of the cards
+- https://sciencebasedmedicine.org/the-myth-of-the-magically-powerful-placebo-returns/  -Dr. Gorski loves links and uses them liberally
+- https://escapecollective.com/  -it even grids pages that are already gridded
